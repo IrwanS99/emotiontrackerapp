@@ -38,6 +38,7 @@ dependencies:
   concentric_transition: ^1.0.3
   lottie: ^3.1.2
   liquid_swipe: ^3.1.0
+  tflite_flutter: ^0.11.0
 
 dev_dependencies:
   flutter_test:
