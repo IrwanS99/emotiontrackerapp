@@ -4,6 +4,8 @@ import 'package:emotiontrackerapp/constants/colors.dart';
 import 'package:emotiontrackerapp/data/mood_data.dart';
 
 class MoodScreen extends StatefulWidget {
+  const MoodScreen({super.key});
+
   @override
   _MoodScreenState createState() => _MoodScreenState();
 }

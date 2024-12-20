@@ -16,7 +16,6 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   late LiquidController _liquidController;
 
-
   @override
   void initState() {
     _liquidController = LiquidController();
@@ -107,13 +106,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     context,
                     PageRouteBuilder(
                       transitionDuration: Duration(milliseconds: 1500),
-                      pageBuilder: (context, animation, secondaryAnimation) => MoodScreen(),
-                      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          MoodScreen(),
+                      transitionsBuilder:
+                          (context, animation, secondaryAnimation, child) {
                         const begin = Offset(1.0, 0.0);
                         const end = Offset.zero;
                         const curve = Curves.ease;
 
-                        var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                        var tween = Tween(begin: begin, end: end)
+                            .chain(CurveTween(curve: curve));
                         var offsetAnimation = animation.drive(tween);
 
                         return SlideTransition(
